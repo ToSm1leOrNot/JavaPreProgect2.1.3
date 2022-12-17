@@ -1,12 +1,12 @@
 import org.springframework.beans.factory.annotation.Value;
 
 public class Cat {
-    private String value;
-
-    public String getValue() {
-        return value;
+    private String message;
+    public Cat(String message) {
+        this.message = message;
     }
-    public void setValue(String value) {
-        this.value = value;
+
+    public String getMessage() {
+        return message;
     }
 }
